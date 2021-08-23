@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=IBM+Plex+Sans+Hebrew:wght@500&family=Lobster&family=Roboto+Mono:wght@500&family=Ubuntu&display=swap');
+
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: rgb(10, 10, 10);
+    background-image: linear-gradient(60deg,rgb(40,40,40),black);
+    position: relative;
+    text-align: center;
+    margin: 0px;
+    padding: 0px
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	background-color: yellow;
+	height: 50px;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+    z-index: 3;
+}
+nav > a:hover{
+    background-image: radial-gradient(white,yellow);
+}
+nav > a {
+	text-decoration: none;
+	
+	padding: 10px 50px;
+	color: black;
+}
+
+#welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 110vh;
+}
+
+.bigh1{
+    font-size: 50px;
+}
+
+.shape-blob {
+	background:yellow;
+	height: 500px;
+	max-width: 500px;
+    width: 100%;
+	border-radius: 30% 50% 20% 40%;
+  	animation: 
+		transform 15s ease-in-out infinite both alternate;
+	opacity:.9;
+	position: absolute;
+	z-index: -1;
+}
+
+@keyframes transform
+{
+    0%,
+  100% { border-radius: 33% 67% 70% 30% / 30% 30% 70% 70%; } 
+   20% { border-radius: 37% 63% 51% 49% / 37% 65% 35% 63%; } 
+   40% { border-radius: 36% 64% 64% 36% / 64% 48% 52% 36%; } 
+   60% { border-radius: 37% 63% 51% 49% / 30% 30% 70% 70%; } 
+   80% { border-radius: 40% 60% 42% 58% / 41% 51% 49% 59%; } 
+}
+
+#projects{ 
+    background-color: #F6EB45;
+    min-height: 50vh;
+}
+
+.prjt-title-section {
+	margin-top: 0px;
+	padding-top: 10px;
+	text-decoration: underline;
+	font-family: 'Roboto Mono', monospace;
+	text-transform: uppercase;
+}
+
+
+.project-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;   
+}
+
+.project-tile {
+    color: white;
+	background-color: black;
+	max-width: 500px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 6% 6%;
+}
+
+.img-project{
+    width: 100%;
+}
+
+i{
+    color: yellow;
+    font-size: 50px;
+}
+
+.waves {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.waves svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 176px;
+    transform: rotateY(180deg);
+}
+
+.waves .shape-fill {
+    fill: #F6EB45;
+}
+
+
+#contact-section{
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-section a {
+    margin: 0px 30px;
+}
+
+#adj {
+	position: absolute;
+	top: 60vh;
+}
+
+.adj1{
+    animation: translateDown 2s infinite;
+}
+
+
+
+@keyframes translateDown {
+    100%,0%{
+
+    }
+    45%,55%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateY(50px);
+        opacity: .7;
+    }
+}
+
